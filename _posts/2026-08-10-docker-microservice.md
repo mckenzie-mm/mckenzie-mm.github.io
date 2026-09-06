@@ -141,16 +141,23 @@ COPY index.js .
 EXPOSE 5002
 CMD ["node", "index.js"]
 ```
+#### # Start the Order Container
+
 Open a terminal in the order folder and build and run the order container from the Dockerfile.
 
 ```sh
 $ docker build -t order .
 $ docker run -d -p 127.0.0.1:5002:5002 order
 ```
+#### # Call the Order Service
+
 Navigate to the localhost on port 5002 on your PC to place an order.
 ```
 http://localhost:5002/order
+```
 
+#### # Expected Response:
+```
 {"message":"Order created successfully!","item":"Laptop","total":999}
 ```
 

@@ -321,7 +321,8 @@ main {
 
 section.section {
   padding-top: clamp(28px, 5vw, 56px);
-  padding-bottom: clamp(28px, 5vw, 56px);
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .section-label {
