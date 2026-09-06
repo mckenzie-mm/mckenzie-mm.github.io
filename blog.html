@@ -1,0 +1,43 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="page">
+  <header class="blog-header">
+    <p class="blog-header__author">Mark Mackenzie  ·  2007 - 2026</p>
+    <h1 class="blog-header__title">
+      Demos, experiments, and notes
+    </h1>
+    <p class="blog-header__subtitle">A career in Software Engineering</p>
+  </header>
+
+  <ul class="cards">
+    {% for post in site.posts %} 
+    <li class="card">
+      <a class="card__anchor" href="{{ post.url }}">
+        <time class="card__time" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time> 
+        <h2 class="card__title">
+          {{ post.title }}
+        </h2>
+        <p class="card__summary">
+          {{ post.summary }}  
+        </p>
+        <!-- <hr class="card__hr"> -->
+        {%- if post.tags -%}
+        <p class="card__tags">
+          <span class="card__tag">Tagged: </span>
+          {% for tag in post.tags %}
+          <span class="card__tag">#{{ tag }}{% if forloop.last == false %}, {% endif %}</span>
+          {% endfor %}
+        </p>
+        {%- endif -%}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="blog-more">
+    <span>[ MORE TO COME ]</span>
+  </div>
+</div>
+
