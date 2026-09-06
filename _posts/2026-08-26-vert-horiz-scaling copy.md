@@ -1,6 +1,6 @@
 ---
 layout: post
-author: jill
+author: Mark
 title: "Scaling of Virtual Machines"
 summary: Vertical & Horizontal Scaling of Virtual Machines. Handling growing amounts of load without losing performance.
 tags: [devops, aws]

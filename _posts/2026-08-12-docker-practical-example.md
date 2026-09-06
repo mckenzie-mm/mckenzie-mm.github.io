@@ -1,6 +1,6 @@
 ---
 layout: post
-author: ted
+author: Mark
 title: "Docker Commands & Notes"
 summary: Docker commands; running, stopping and deleting containers by way of an example.
 tags: [docker, devops, nodejs]

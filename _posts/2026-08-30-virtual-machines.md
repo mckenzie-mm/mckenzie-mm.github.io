@@ -1,6 +1,6 @@
 ---
 layout: post
-author: ted
+author: Mark
 title: "Virtual Machines (VM)"
 summary: Portability & Consistency. Software-based computers running inside another physical computer.
 tags: [devops]

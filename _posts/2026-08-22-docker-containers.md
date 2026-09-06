@@ -1,6 +1,6 @@
 ---
 layout: post
-author: ted
+author: Mark
 title: "Containers <b>&#8739;</b> Docker"
 summary: From Virtual Machines to Containers and Docker. Lighter, faster to start, & much more resource-efficient
 tags: [docker, devops]

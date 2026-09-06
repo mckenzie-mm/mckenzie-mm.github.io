@@ -1,6 +1,6 @@
 ---
 layout: post
-author: jill
+author: Mark
 title: "AWS Scaling: Practical Notes"
 summary: Horizontal Scaling using Auto Scaling Group and Elastic Load Balancer from AWS.
 tags: [devops, aws]

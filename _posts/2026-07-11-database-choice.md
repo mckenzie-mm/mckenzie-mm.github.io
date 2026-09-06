@@ -1,6 +1,6 @@
 ---
 layout: post
-author: ted
+author: Mark
 title: "Database Selection"
 summary: Advice from Ethan McCue on the reasons to use Postgres.
 tags: [devops]

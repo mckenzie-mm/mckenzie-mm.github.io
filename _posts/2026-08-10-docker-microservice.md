@@ -1,6 +1,6 @@
 ---
 layout: post
-author: ted
+author: Mark
 title: "Docker Microservice"
 summary: A simple example of a microservice built with docker demonstrating a producer/consumer application.
 tags: [docker, devops, nodejs]

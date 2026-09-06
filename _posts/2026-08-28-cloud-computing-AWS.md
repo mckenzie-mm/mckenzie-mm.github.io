@@ -1,6 +1,6 @@
 ---
 layout: post
-author: jill
+author: Mark
 title: "Cloud Computing: EC2"
 summary: Renting Virtual Machines over the internet; Amazon, AWS and EC2.
 tags: [devops, aws]

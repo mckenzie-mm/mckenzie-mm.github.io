@@ -1,6 +1,6 @@
 ---
 layout: post
-author: ted
+author: Mark
 title: "Database Patterns in Microservices"
 summary: Two different, commonly used patterns in Microservice.
 tags: [kubernetes, docker, devops]

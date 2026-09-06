@@ -1,6 +1,6 @@
 ---
 layout: post
-author: jill
+author: Mark
 title: "Cloud Computing: Lambda"
 summary: "Functions as a service, aka Serverless."
 tags: [devops, aws]

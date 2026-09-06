@@ -1,6 +1,6 @@
 ---
 layout: post
-author: ted
+author: Mark
 title: "Kubernetes"
 summary: Automates the deployment, scaling, & management of containerized (Docker) applications.
 tags: [kubernetes, docker, devops]

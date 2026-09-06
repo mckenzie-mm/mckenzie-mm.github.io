@@ -1,6 +1,6 @@
 ---
 layout: post
-author: ted
+author: Mark
 title: "Kubernetes Services"
 summary: An explanation of services in kubernetes and the difference between services in docker compose.
 tags: [kubernetes, docker, devops]

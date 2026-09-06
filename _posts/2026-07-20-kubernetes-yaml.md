@@ -1,6 +1,6 @@
 ---
 layout: post
-author: ted
+author: Mark
 title: "Kubectl with yaml files"
 summary: An extract of the transcript from a course by Mischa van den Burg on Kubectl with yaml files.
 tags: [kubernetes, docker, devops]

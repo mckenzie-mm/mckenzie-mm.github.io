@@ -1,6 +1,6 @@
 ---
 layout: post
-author: ted
+author: Mark
 title: "Docker Compose"
 summary: Simplifying microservices with Docker Compose.
 tags: [docker, devops, nodejs]
