@@ -1,0 +1,15 @@
+<header role="banner" class="site-header">
+    <div class="site-header__container">
+        <a href="/" class="site-header__brand">MM</a>
+        <nav id="site-nav" class="site-nav">
+            {% for item in site.data.navigation %}
+                <a href="{{ item.link }}" class="site-nav-item">
+                    {{ item.name }}
+                </a>
+            {% endfor %}
+            <a href="/" class="site-header__enquiry">
+            Enquire  &#8594;
+            </a>
+        </nav>
+    </div>
+</header>
