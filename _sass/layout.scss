@@ -510,16 +510,6 @@ img + strong {
       color: #6b9e56;
       margin: 0 0 32px;
     }
-
-    &__name {
-      font-size: 80px;
-      font-weight: 800;
-      letter-spacing: -0.05em;
-      line-height: 0.9;
-      color: #111110;
-      margin: 0 0 20px;
-    }
-
     &__subtitle {
       font-size: clamp(16px, 2.5vw, 18px);
       font-weight: 450;
@@ -545,6 +535,26 @@ img + strong {
       flex-wrap: wrap;
     }
   }
+
+.hero__name {
+  font-size: 80px;
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+  color: #111110;
+  margin: 0 0 20px;
+
+  /* overide default */
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: #333;
+  color: #2d3f50;
+  // text-transform: uppercase;
+}
 
 
 /* end hero */
