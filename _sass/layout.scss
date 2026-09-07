@@ -963,3 +963,22 @@ pre {
   text-transform: uppercase;
   font-size: 1rem;
 }
+
+/* wwurm */
+
+.wwurm__img {
+  width: 98%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+strong.wwurm__caption {
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+a.wwurm__anchor {
+  text-transform: none;
+  font-size: .9rem;
+  color: #4363a7;
+}

@@ -1,8 +1,10 @@
+
+- name: "React | .NET"
+  link: /dotnet.html
 - name: Blog
   link: /blog.html
 - name: Tech Stack
   link: /#skills
 - name: Experience
   link: /#experience
-- name: About
-  link: /about.html
+
