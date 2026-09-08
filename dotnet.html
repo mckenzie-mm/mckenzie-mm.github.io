@@ -12,30 +12,32 @@ title: "React | .NET"
             </div>
         </header>
         <div class="post-content">
-            <p>This section contains a detailed description of some of my recent work in .NET, React and DevOps.</p>
+
+            <p><i>This section contains a detailed description of some of my recent work in .NET, React and DevOps.</i></p>
+
+            <h2>Overview</h2>
+
                 
             <p>The Winery App is a Nextjs/.NET replacement for the "savoy" 
                 Wordpress app built by Nordicmade for the company "wwurm winery" in Austria. My demonstration website is at: 
             </p>  
             <a href="http://dodo-tek.com" class="wwurm__anchor" target="_blank" rel="noopener noreferrer">[ http://dodo-tek.com ]</a>
-            <p>The company 'Nordicmade' is a small consultancy of WordPress and WooCommerce developers based in Oslo, Norway. They have a reputation of creating beautiful, quality, minimalist, 
-                easy-to-use themes that help people on their e-commerce journey:
-            </p>    
-            <a href="https://www.nordicmade.com/" class="wwurm__anchor" target="_blank" rel="noopener noreferrer">[ https://www.nordicmade.com ]</a>
-            <p>The Frontend is pretty standard, with a carousel, lazy product loading, shopping cart and product page. All of these features have been well documented in the past and it
-                is like a default standard in Ecommerce. They are an established design. 
-            </p>
+           
             <p>Although Nextjs can run entirely on its own, this app separates it into backend code and frontend to allow for the possibility of 
-                independent frontend and backend scaling if necessary. For the backend, .NET was chosen. Current research indicates that .NET 
+                independent frontend and backend scaling if necessary. For the backend, .NET was chosen. That doesn't mean I don't like Nodejs, I like both. Current research indicates that .NET 
                 consistently outperforms Nodejs in speed tests, google, for example: 
             </p>
             <a href="https://www.youtube.com/watch?v=iFbpaRjRpOc" class="wwurm__anchor" target="_blank" rel="noopener noreferrer">[ PhanxDEV: I Compared ASP.NET Core and Node.js for Performance ]</a>
-            
+            <p></p>
             <p>The app runs on an AWS container service (ECS). This was chosen instead of Kubernetes due to the lower cost and 
                 ease with which a demonstration setup could be configured with ECS. It is deployed with infra-structure as a code (CDK). 
                 The CDK code used to deploy the .NET and Nextjs is at: 
-            </p>      
+            </p>     
             <a href="https://github.com/mckenzie-mm/ecs-nordic-cdk" class="wwurm__anchor" target="_blank" rel="noopener noreferrer">[ https://github.com/mckenzie-mm/ecs-nordic-cdk ]</a>
+ 
+             <p>The Frontend follows a default standard for Ecommerce sites, with a carousel, lazy product loading, shopping cart and product page. 
+                Screen captures of the running website are shown below. 
+            </p>
         
             <img class="wwurm__img" src="assets/images/wwurm-11.png" alt="wwurm">
             <strong class="wwurm__caption">Figure 1. Front page containing a carousel and lazy loading of products.</strong>
@@ -59,9 +61,9 @@ title: "React | .NET"
             <p>The Nextjs front end code is at:</p>
             <a href="https://github.com/mckenzie-mm/nordic-frontend" class="wwurm__anchor" target="_blank" rel="noopener noreferrer">[ https://github.com/mckenzie-mm/nordic-frontend ]</a>
 
-            <p>Nextjs was chosen ahead of a pure React front end due to the superior user experience of server side rendered pages 
+            <p>The React framework, Nextjs, was chosen ahead of a pure React front end due to the superior user experience of Server Side Rendered pages 
             over pure single page apps. The downside of Nextjs is the increased code complexity and the risk of accidently exposing 
-            sensitive data. For example, state management is challenging. It can not work across server side rendered pages. As a workaround, 
+            sensitive data. In terms of complexity, for example, state management is challenging in Nextjs. It can not work across server side rendered pages. As a workaround, 
             the cart in this app uses localstorage. This is a copy of Steve Griffith's javascript 
             cart:</p> 
             
@@ -72,20 +74,20 @@ title: "React | .NET"
             affected roughly 20% to 28% of global internet traffic, bringing down major sites like X (Twitter), ChatGPT, Spotify, and Canva.
             </p>
            
-            <h2>Backend: .NET(Webapi)</h2>
+            <h2>Backend: .NET (Webapi)</h2>
             <p>The dotnet backend is at:</p> 
             <a href="https://github.com/mckenzie-mm/nordic-api" class="wwurm__anchor" target="_blank" rel="noopener noreferrer">[ https://github.com/mckenzie-mm/nordic-api ]</a>
-            <p>The code was built on a linux laptop using the .NET cli with ASP.NET controller-based Web API. The database is an 
+            <p>I primarily code in Ubuntu (the same operating system that I deploy to). The code was built on a Ubuntu laptop using the .NET cli with ASP.NET controller-based Web API. The database is an 
                 Sqlite database. This was chosen in place of a SqlServer database due it's small size, which would otherwise 
                 have required an additional EC2 instance. Also, the low data size (< 1000) associated with these particular web apps did 
-                not warrant a more elaborate database. I intend to replace it with Postgres at a later date. You can read about the pros/cons of the different types of databases at:
+                not warrant a more elaborate database. I intend to replace it with Postgres at a later date. The pros/cons of the different types of databases are at:
             </p>
             <a href="https://mccue.dev/pages/8-16-24-just-use-postgres" class="wwurm__anchor" target="_blank" rel="noopener noreferrer">[ Ethan McCue: Just use Postgres ]</a>
             <p>The .NET nuget package, "Dapper", was used for making the SQL queries (my personal preference over Entity Framework). 
-                The DTO was coded manually (again my personal preference over AutoMapper).
+                The Data Transfer Objects (DTO) were coded manually (again my personal preference over AutoMapper).
             </p>
-            <h2>Dev Ops: AWS(CDK)</h2>
-            <p>The app is deployed using Cloud Development Kit (CDK), infra-structure as code from AWS. The ECS runs both the Nextjs and dotnet apps (docker containers) on the same task using an EC2 cluster. The task uses a 
+            <h2>Dev Ops: AWS (CDK)</h2>
+            <p>The app is deployed to AWS using the Cloud Development Kit (CDK), infra-structure as code from AWS. The ECS runs both the Nextjs and dotnet apps (docker containers) on the same task using an EC2 cluster. The task uses a 
                 bridge network for communicating between the containers. A code extract of the CDK is shown below.</p>
             <img class="wwurm__img" src="assets/images/wwurm-1.png" alt="wwurm" style="width: 65%;">
             <img class="wwurm__img" src="assets/images/wwurm-2.png" alt="wwurm" style="width: 65%;">
