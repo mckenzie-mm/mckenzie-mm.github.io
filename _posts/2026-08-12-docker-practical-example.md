@@ -166,10 +166,15 @@ Then re-launch a container with port mapping:
 ```sh
 $ docker run -d -p 127.0.0.1:3000:5000 my-container
 ```
+
+#### # Call the Service
+
 Navigate to the localhost on port 3000 on your PC
 ```
 http://localhost:3000/about
 ```
+#### # Expected Response:
+
 ```
 About Us: This is a simple Node.js router network.
 ```
